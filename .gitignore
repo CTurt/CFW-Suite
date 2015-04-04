@@ -1,0 +1,5 @@
+guiTool/build
+guiTool/*.bin
+guiTool/*.bat
+guiTool/guiTool
+guiTool/guiTool.exe
