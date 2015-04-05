@@ -100,7 +100,7 @@ int main(int argc, char **argv) {
 		
 		guiOffset = ((struct header *)firmware)->part5offset * 8;
 		
-		// Gui data is not the final section, after it comes apps like pictochat
+		// GUI data is not the final section, after it comes apps like pictochat
 		/*if(guiOffset + compressedSize > size) {
 			printf("ERROR! Not enough space for compressed gui data!\n");
 			free(firmware);

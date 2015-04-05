@@ -3,3 +3,8 @@ guiTool/*.bin
 guiTool/*.bat
 guiTool/guiTool
 guiTool/guiTool.exe
+FlashMeInjector/build
+FlashMeInjector/*.bin
+FlashMeInjector/*.bat
+FlashMeInjector/FlashMeInjector
+FlashMeInjector/FlashMeInjector.exe
