@@ -10,7 +10,7 @@ Code from Chism, Loopy, Lick, and others has been used.
 - (Optional but recommended) install a version of [FlashMe](https://home.comcast.net/~olimar/flashme/), this adds a failsafe to your firmware so you can recover if a future flash fails,
 - Dump your DS firmware using [DSBF Dump](http://www.ds-scene.net/?s=viewtopic&nid=2460),
 
-### Modifiying the firmware
+### Modifying the firmware
 - Compile guiTool by running `make`,
 - Extract gui data from your firmware with `guiTool firmware.bin -e gui.bin`,
 - Make any changes you want to the `gui.bin` file (note: text is Unicode), the "Touch the Touch Screen to continue." text starts at `0x2c20` in the file.
