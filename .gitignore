@@ -8,3 +8,9 @@ FlashMeInjector/*.bin
 FlashMeInjector/*.bat
 FlashMeInjector/FlashMeInjector
 FlashMeInjector/FlashMeInjector.exe
+fwManager/fwManager.nds
+fwManager/*.bat
+fwManager/arm9/build
+fwManager/arm9/fwManager.elf
+fwManager/arm7/build
+fwManager/arm7/fwManager.elf
