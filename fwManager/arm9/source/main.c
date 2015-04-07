@@ -31,6 +31,11 @@ int main(void) {
 	printf("\n fwManager - CTurt\n");
 	printf(" =================\n\n");
 	
+	if(REG_DSIMODE) {
+		printf(" Cannot use on DSi/3DS!\n");
+		while(1) swiWaitForVBlank();
+	}
+	
 	printf(" Warning!\n This tool may damage your\n system! Use at your own risk!\n\n");
 	
 	if(!fatInitDefault()) {
