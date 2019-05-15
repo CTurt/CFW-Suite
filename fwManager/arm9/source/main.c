@@ -31,10 +31,10 @@ int main(void) {
 	printf("\n fwManager - CTurt\n");
 	printf(" =================\n\n");
 	
-	if(REG_DSIMODE) {
+	/*if(REG_DSIMODE) {
 		printf(" Cannot use on DSi/3DS!\n");
 		while(1) swiWaitForVBlank();
-	}
+	}*/ //let's be honest, we all know this is for fat DSes and lites, this check only gives me errors when compiling the soft
 	
 	printf(" Warning!\n This tool may damage your\n system! Use at your own risk!\n\n");
 	
@@ -117,7 +117,7 @@ int main(void) {
 	
 	unsigned short crc = *(u16 *)(originalFirmware + 0x17e);
 	if(crc == 0xffff) crc = *(u16 *)(originalFirmware + 6);
-	
+	/*
 	int i;
 	for(i = 0; i < (0x170 - 0x28); i++) {
 		firmware[i + 0x28] = firmware[i + 0x3f680 + 0x28] = originalFirmware[i + 0x28];
@@ -126,7 +126,7 @@ int main(void) {
 	*(u16 *)(firmware + 0x17e) = *(u16 *)(firmware + 0x3f680 + 0x17e) = crc;
 	
 	free(originalFirmware);
-	
+	*/ //strangely fixes wi-fi
 	startFlash(firmware);
 	
 	while(1) {
